@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_locale"
+        android:icon="@drawable/ic_room_white_24dp"
+        android:title="@string/title_navigation_locale" />
+
+    <item
+        android:id="@+id/navigation_business"
+        android:icon="@drawable/ic_business"
+        android:title="@string/title_navigation_business" />
+
+    <item
+        android:id="@+id/navigation_tech"
+        android:icon="@drawable/ic_tech"
+        android:title="@string/title_navigation_tech" />
+
+    <item
+        android:id="@+id/navigation_sports"
+        android:icon="@drawable/ic_sports"
+        android:title="@string/title_navigation_sports" />
+
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/title_navigation_search"/>
+</menu>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="title_navigation_locale">BRASIL</string>
+    <string name="title_navigation_business">NEGÓCIOS</string>
+    <string name="title_navigation_tech">TECNOLOGIA</string>
+    <string name="title_navigation_sports">ESPORTES</string>
+    <string name="title_toolbar_locale">BRASIL</string>
+    <string name="title_toolbar_business">NEGÓCIOS</string>
+    <string name="titletoolbar_tech">TECNOLOGIA</string>
+    <string name="title_toolbar_sports">ESPORTES</string>
+    <string name="title_navigation_search">BUSCAR</string>
+    <string name="title_toolbar_search">BUSCAR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_description_search_no_results">Image for search no results</string>
+
+
+</resources>
