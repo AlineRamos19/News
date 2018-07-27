@@ -3,6 +3,7 @@ package com.aline.android.news.adapter
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.aline.android.news.R
+import com.aline.android.news.activity.OpenListenerActivity
 import com.aline.android.news.models.Article
 import com.bumptech.glide.Glide
 import com.bumptech.glide.Priority
@@ -36,8 +38,6 @@ class AdapterNews(val context: Context, val listNews: List<Article>?) : Recycler
     override fun onBindViewHolder(holder: ViewHolderNews, position: Int) {
 
         val list = listNews!![position]
-
-
         val dateApi = list.publishedAt
         val sdf1 = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.forLanguageTag("pt"))
         val sdf2 = SimpleDateFormat("dd-MM-yyyy hh:mma")
@@ -54,6 +54,12 @@ class AdapterNews(val context: Context, val listNews: List<Article>?) : Recycler
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .priority(Priority.HIGH)
         Glide.with(context).load(list.urlToImage).apply(options).into(holder.imageNews)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, OpenListenerActivity::class.java)
+            intent.putExtra("urlWebView", list.url)
+            holder.itemView.context.startActivity(intent)
+        }
 
     }
 

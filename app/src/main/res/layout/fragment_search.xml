@@ -8,6 +8,8 @@
     tools:context=".fragments.SearchFragment">
 
     <EditText
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@android:color/black"
         android:id="@+id/edit_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,6 +30,7 @@
         android:layout_alignParentTop="true"
         android:layout_margin="8dp"
         android:padding="10dp"
+        android:background="@drawable/state_pressed_search"
         android:src="@drawable/select_search_icon" />
 
 
@@ -50,6 +53,7 @@
 
     <TextView
         android:visibility="gone"
+        android:fontFamily="sans-serif-thin"
         android:id="@+id/not_found_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,7 +63,7 @@
         android:textSize="16sp"
         android:gravity="center"
         android:textColor="@android:color/black"
-        android:text="Sem resultados para essa busca.\nTente novamente."
+        android:text="@string/serach_not_found"
         android:textStyle="italic" />
 
 
